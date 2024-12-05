@@ -27,7 +27,7 @@ def add_contact(all_contacts):
 
     while True:
         address = input("Please Enter Contact Address: ").strip()
-        if address.isalpha() or address in ",":
+        if address.isalpha() and address in ",":
             break
         else:
             print("Address must be write in Alphabetically")
