@@ -3,6 +3,7 @@ from add_contact import add_contact
 from view_contact import view_contact
 from save_contact import save_contact
 from remove_contact import remove_contact
+from load_contact import load_contacts_from_file
 
 all_contacts = []
 
