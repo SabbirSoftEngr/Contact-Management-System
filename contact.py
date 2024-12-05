@@ -26,20 +26,7 @@ while True:
     elif menu =="3":
         SearchContact(all_contacts)
     elif menu == "4":
-        if len(all_contacts) == 0:
-            print("No contacts to remove.")
-        else:
-            phone_number_to_remove = int(input("Enter phone number to remove: "))
-            found = False
-            for contact in all_contacts:
-                if contact["Phone_Number"] == phone_number_to_remove:
-                    all_contacts.remove(contact)
-                    found = True
-                    print("Contact removed successfully!")
-                    break
-
-                else:
-                    print("Contact not found in the list")
+        all_contacts = remove_contact(all_contacts)
     elif menu == "0":
         print('Thanks For Using Contact Management Application')
         
