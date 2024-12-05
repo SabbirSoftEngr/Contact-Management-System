@@ -1,5 +1,4 @@
 from save_contact import save_contact
-
 def add_contact(all_contacts):
     while True:
 
@@ -18,14 +17,14 @@ def add_contact(all_contacts):
             print("Invalid email format. Please include '@' and a domain.")
 
     while True:
+            phone_number = input("Please Enter A Valid Unique Phone Number: ").strip()
 
-        phone_number = input("Please Enter A Valid Unique Phone Number: ").strip()
-        if phone_number.isdigit() and phone_number not in all_contacts:
-            break
-        elif phone_number in all_contacts:
-            print("This phone number already exists in the system.")
-        else:
-            print("Phone number should only contain digits. Please try again.")
+            if phone_number.isdigit() and not any(contact['Phone_Number'] == phone_number for contact in all_contacts):
+                break
+            elif any(contact['Phone_Number'] == phone_number for contact in all_contacts):
+                print("This phone number already exists in the system.")
+            else:
+                print("Phone number should only contain digits. Please try again.")
 
     while True:
 
