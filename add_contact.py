@@ -25,6 +25,7 @@ def add_contact(all_contacts):
                 print("This phone number already exists in the system.")
             else:
                 print("Phone number should only contain digits. Please try again.")
+            number = int(phone_number)
 
     while True:
 
