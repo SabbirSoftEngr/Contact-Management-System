@@ -1,4 +1,4 @@
-from save_contact import save_contact  # Assuming this function is defined elsewhere.
+from save_contact import save_contact
 
 def add_contact(all_contacts):
     while True:
