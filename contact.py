@@ -2,6 +2,7 @@ from search_contact import SearchContact
 from add_contact import add_contact
 from view_contact import view_contact
 from save_contact import save_contact
+from remove_contact import remove_contact
 
 all_contacts = []
 
