@@ -3,7 +3,7 @@ def remove_contact(all_contacts):
         print("No contacts to remove.")
     else:
         try:
-            phone_number_to_remove = int(input("Enter phone number to remove: "))
+            phone_number_to_remove = input("Enter phone number to remove: ").strip()
             found = False
             for contact in all_contacts:
                 if contact["Phone_Number"] == phone_number_to_remove:
@@ -16,5 +16,4 @@ def remove_contact(all_contacts):
         except ValueError:
             print("Invalid phone number. Please enter a Valid Phone Number.")
     return all_contacts
-
 
